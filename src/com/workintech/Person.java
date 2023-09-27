@@ -28,7 +28,8 @@ long mobileNum;
         System.out.println("Last name: " + lastName);
         System.out.println("Age: " + age);
     }
-    public String getFirstName(){
+
+    public String getFirstName() {
         return firstName;
     }
     public String getLastName(){
@@ -42,5 +43,11 @@ long mobileNum;
     }
     public boolean isTeen(){
         return age <= 19 && age >= 13;
+    }
+
+    @Override
+    public String toString() {
+
+        return String.format("First Name: %s, Last Name: %s, Age: %d", firstName, lastName, age);
     }
 }
